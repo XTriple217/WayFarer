@@ -1,25 +1,19 @@
 # WayFarer
 
-As I was embarking on developing RESTful APIs using Spring Boot, I adhered to the following 
-guidelines to ensure my project is well-structured, secure, and aligns with best practices:  
-1. Implemention Security with JSON Web Tokens (JWT):  
-  ○ Use Spring Security to implement authentication and authorization in your 
-application.  
-  ○ Ensuring JWT tokens are generated and validated securely to protect sensitive 
-resources.  
-  ○ Using access tokens for stateless communication between clients and the server. 
-2. Password Encryption:  
-  ○ Always encrypted passwords before storing them in the database.  
-3. Project Structure and Packages:  
-  ○ Organized my application into well-defined packages for clarity and maintainability. At a minimum, include:  
-    ■ controllers: Handle HTTP requests and responses.  
-    ■ entities: Represent database tables as Java objects.  
-    ■ services: contain business logic.  
-    ■ repositories: Interact with the database.  
-    ■ payloads: Define request and response data objects.  
-    ■ utils: Define utility classes.  
-4. Using appropriate HTTP status codes:  
-  ○ Return meaningful status codes for API responses.  
-5. API Versioning:  
-  ○ Incorporate API versioning to ensure backward compatibility as your application evolves.  
-  ○ Use URI versioning (e.g., /api/v1/resource) or other strategies discussed in class. 
+---------- Project Overview -------------  
+# WayFarer is a public bus transportation booking service.  
+All Features  
+1. User can sign up.  
+2. User can sign in.  
+3. Admin can create a trip.  
+4. Admin can cancel a trip.  
+5. Both Admin and Users can see all trips.  
+6. Both Admin and Users can see a specific trip.  
+7. Users can book a seat on a trip.  
+8. View all bookings. An Admin can see all bookings, while user can see all of 
+his/her bookings.  
+9. Users can delete their booking. 
+ 
+The API endpoints responds with a JSON object specifying the HTTP status code, 
+and either a data property (on success) or an error property (on failure). When present, the 
+data property is always an object or an array.  
